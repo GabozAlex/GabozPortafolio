@@ -44,7 +44,7 @@ body{
 }
 
 .hero{
-	background-color: #f4f4f4;
+	background-color: rgb(215, 214, 226);
 	color: #333;
 	padding: 80px 20px;
 	text-align: center;
@@ -212,6 +212,7 @@ body{
 
   /* Estilos generales para la sección Proyectos */
 #proyecto {
+	background-color:  rgb(215, 214, 226);;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 2rem 1rem;
@@ -461,6 +462,11 @@ body{
 	transition: all 0.3s;
   }
   
+  #contacto ul li a {
+	color: white;
+	text-decoration: none;
+  }
+
   #contacto ul li:hover {
 	background-color: #2980b9;
 	transform: translateY(-2px);
