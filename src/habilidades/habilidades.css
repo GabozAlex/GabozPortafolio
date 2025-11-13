@@ -1,0 +1,90 @@
+/*
+ * 1. Estilos para el Contenedor Principal de la Sección
+ * CLASE RECOMENDADA: .Habilidades
+ */
+ .Habilidades {
+    padding: 60px 40px; 
+    margin: 40px auto; 
+    max-width: 1000px; /* Un poco más ancho para acomodar la lista */
+    background-color: #161b22; 
+    border-radius: 8px;
+}
+
+/*
+ * 2. Estilos para el Título Principal de la Sección
+ * Etiqueta: <h2>Habilidades</h2>
+ */
+.Habilidades h2 {
+    font-size: 2.2rem;
+    color: #66fcf1; 
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2e435a; 
+    text-align: center;
+}
+
+/*
+ * 3. Estilos para los Subtítulos de Categoría
+ * Etiqueta: <h3> Lenguajes de Programacion & Frameworks, etc.
+ */
+.Habilidades h3 {
+    font-size: 1.4rem;
+    color: #f0f0f0; 
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-left: 5px solid #ffc72c; /* Línea de acento visual */
+    padding-left: 10px;
+}
+
+/*
+ * 4. Estilos para la Lista de Habilidades
+ * Etiqueta: <ul>
+ */
+.Habilidades ul {
+    list-style: none; /* Elimina los bullets por defecto */
+    padding: 0;
+    
+    /* Usa CSS Grid para una presentación organizada y fluida */
+    display: grid;
+    /* Coloca los elementos en columnas que se ajusten automáticamente */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 15px; /* Espacio entre las tarjetas */
+}
+
+/*
+ * 5. Estilos para cada Elemento/Habilidad Individual
+ * Etiqueta: <li>
+ */
+.Habilidades li {
+    background-color: #2e435a; /* Color de fondo de la "tarjeta" de habilidad */
+    color: #e6edf3;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    
+    /* Efecto de sombra sutil y transición */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto Hover para las Habilidades */
+.Habilidades li:hover {
+    background-color: #4a5c71; /* Un poco más claro al pasar el ratón */
+    transform: translateY(-3px); /* Pequeño levantamiento */
+    color: #66fcf1; /* Resalta el texto */
+}
+
+/*
+ * 6. Adaptación para Móviles (Ajusta el padding)
+ */
+@media (max-width: 600px) {
+    .Habilidades {
+        padding: 30px 15px;
+    }
+    .Habilidades ul {
+        /* Permite que las tarjetas sean más pequeñas en móvil */
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    }
+}

@@ -1,0 +1,27 @@
+/*
+ * Archivo: Enlaces.css
+ * Estilos para el componente enlaces.tsx (la etiqueta <a>)
+ */
+ .enlace-nav {
+    /* Resetear el estilo de enlace predeterminado */
+    text-decoration: none;
+    color: #c5c5c5; 
+    
+    font-size: 1.1rem;
+    font-weight: 500;
+    
+    transition: color 0.3s ease, transform 0.1s ease;
+}
+
+/* Efecto al pasar el ratón (Hover) */
+.enlace-nav:hover {
+    color: #66fcf1; 
+    transform: translateY(-2px); 
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    .enlace-nav {
+        font-size: 1rem;
+    }
+}

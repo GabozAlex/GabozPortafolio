@@ -1,0 +1,61 @@
+/*
+ * 1. Estilos para el Contenedor Principal de la Sección
+ * CLASE RECOMENDADA: .SobreMi
+ */
+ .SobreMi {
+    /* Espacio interno para separar el contenido de los bordes */
+    padding: 60px 40px; 
+    
+    /* Margen superior para separarlo de la sección anterior (opcional) */
+    margin-top: 40px; 
+    
+    /* Color de fondo sutilmente diferente para marcar la sección */
+    background-color: #161b22; 
+    
+    /* Borde redondeado suave */
+    border-radius: 8px;
+    
+    /* Limita el ancho del contenido para mejorar la lectura */
+    max-width: 900px; 
+    margin: 40px auto; /* Centra el bloque en la página */
+}
+
+/*
+ * 2. Estilos para el Título de la Sección
+ * Etiqueta: <h2>Sobre mi</h2>
+ */
+.SobreMi h2 {
+    font-size: 2.2rem;
+    color: #66fcf1; /* Color de acento (el mismo que en el Header) */
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2e435a; /* Línea separadora sutil */
+    text-align: center;
+}
+
+/*
+ * 3. Estilos para el Párrafo de la Biografía
+ * Etiqueta: <p>
+ */
+.SobreMi p {
+    font-size: 1.1rem;
+    line-height: 1.7; /* Espaciado entre líneas para mejor lectura */
+    color: #e0e0e0;
+    text-align: justify; /* Justifica el texto para una apariencia más formal */
+}
+
+/*
+ * 4. Adaptación para Móviles
+ */
+@media (max-width: 768px) {
+    .SobreMi {
+        padding: 40px 20px;
+        margin: 20px 10px;
+    }
+    .SobreMi h2 {
+        font-size: 1.8rem;
+    }
+    .SobreMi p {
+        font-size: 1rem;
+    }
+}

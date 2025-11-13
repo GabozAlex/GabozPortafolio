@@ -1,0 +1,67 @@
+/*
+ * 1. Estilos para el Contenedor Principal de la Sección
+ * CLASE: .Proyectos
+ */
+ .Proyectos {
+    padding: 60px 40px; 
+    margin: 40px auto; 
+    max-width: 1200px; /* Un ancho amplio para mostrar la cuadrícula */
+    background-color: #0d1117; /* Fondo ligeramente diferente o transparente si quieres usar el App.css */
+    border-radius: 8px;
+    min-height: 500px; /* Asegura un mínimo de altura */
+}
+
+/*
+ * 2. Estilos para el Título de la Sección
+ * Etiqueta: <h2>Proyectos</h2>
+ */
+.Proyectos h2 {
+    font-size: 2.5rem;
+    color: #ffc72c; /* Color de acento diferente para destacar */
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #66fcf1; /* Línea de acento fuerte */
+    text-align: center;
+    font-weight: 700;
+}
+
+/*
+ * 3. Estilos para el Párrafo de Instrucción (Inicial)
+ * Etiqueta: <p>Aquí se mostrarán mis proyectos.</p>
+ */
+.Proyectos p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/*
+ * 4. Contenedor de la Cuadrícula (Grid) de Proyectos
+ * (Necesitarás añadir un <div> con la clase 'proyectos-grid' después del <p>)
+ */
+.proyectos-grid {
+    /* Define la cuadrícula principal */
+    display: grid;
+    /* Crea columnas que se ajusten automáticamente */
+    /* Mínimo 300px, Máximo 1 fracción del espacio disponible */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; /* Espacio entre las tarjetas de proyecto */
+}
+
+/*
+ * 5. Adaptación para Móviles
+ */
+@media (max-width: 768px) {
+    .Proyectos {
+        padding: 40px 20px;
+    }
+    .Proyectos h2 {
+        font-size: 2rem;
+    }
+    .proyectos-grid {
+        /* En pantallas pequeñas, la cuadrícula puede colapsar a una sola columna */
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+}

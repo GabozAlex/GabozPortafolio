@@ -1,0 +1,51 @@
+/*
+ * 1. RESETS y Estilos Base Globales
+ * (Para asegurar consistencia entre navegadores)
+ */
+ * {
+  /* Reinicia el modelo de caja para facilitar el diseño */
+  box-sizing: border-box;
+  /* Elimina el margen por defecto de todos los elementos */
+  margin: 0;
+  /* Elimina el padding por defecto de todos los elementos */
+  padding: 0;
+}
+
+html {
+  /* Suaviza el scroll al saltar entre secciones (si usas enlaces <a> con #) */
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Define una fuente base (ajusta esto a la fuente que quieras usar) */
+  font-family: 'Arial', sans-serif;
+  /* Color de fondo por defecto del cuerpo */
+  background-color: #0d1117; 
+  /* Color de texto por defecto */
+  color: #e6edf3; 
+  line-height: 1.6;
+}
+
+/*
+* 2. Estilos para el LAYOUT y el Contenido Principal
+* Etiqueta: <main>
+*/
+main {
+  /* Añade un margen superior para compensar el header fijo */
+  /* (Asegúrate de que este valor sea mayor que la altura de tu header) */
+  padding-top: 80px; 
+  
+  /* Centra el contenido principal */
+  max-width: 1400px;
+  margin: 0 auto;
+}
+/*
+* 4. Ajuste para el Footer (Opcional)
+*/
+footer {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #161b22;
+  color: #8b949e;
+  margin-top: 50px; /* Separación del último contenido */
+}

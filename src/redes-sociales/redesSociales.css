@@ -1,0 +1,82 @@
+/*
+ * 1. Estilos para el Contenedor Principal de la Sección
+ * CLASE: .RedesSociales
+ */
+ .RedesSociales {
+    padding: 60px 40px; 
+    margin: 40px auto; 
+    max-width: 800px; 
+    background-color: #161b22; 
+    border-radius: 8px;
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+/*
+ * 2. Estilos para el Título de la Sección
+ * Etiqueta: <h2>Redes Sociales</h2>
+ */
+.RedesSociales h2 {
+    font-size: 2.2rem;
+    color: #ffc72c; /* Color de acento */
+    margin-bottom: 30px;
+}
+
+/*
+ * 3. Estilos para la Lista de Enlaces
+ * Etiqueta: <ul>
+ */
+.RedesSociales ul {
+    list-style: none; /* Elimina los bullets */
+    padding: 0;
+    
+    /* Usa Flexbox para alinear los ítems horizontalmente */
+    display: flex;
+    justify-content: center; /* Centra los enlaces */
+    flex-wrap: wrap; /* Permite que los ítems salten de línea en móvil */
+    gap: 25px; /* Espacio entre los ítems */
+}
+
+/*
+ * 4. Estilos para cada Enlace Individual
+ * Etiqueta: <li> (Aquí deberías anidar un <a>)
+ */
+.RedesSociales li {
+    /* Aquí se asumiría que cada <li> contiene un <a> o un botón */
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    background-color: #2e435a;
+    color: #e6edf3;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+/* * 5. Efecto Hover para los Enlaces (simulando que son botones)
+ */
+.RedesSociales li:hover {
+    background-color: #66fcf1; /* Color de acento al pasar el ratón */
+    color: #161b22; /* Texto oscuro sobre el acento */
+    transform: translateY(-5px); /* Pequeño efecto de levantamiento */
+}
+
+.RedesSociales li a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del padre */
+
+}
+
+.RedesSociales li a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+/*
+ * 6. Adaptación para Móviles
+ */
+@media (max-width: 600px) {
+    .RedesSociales {
+        padding: 40px 15px;
+    }
+    .RedesSociales ul {
+        gap: 15px;
+    }
+}

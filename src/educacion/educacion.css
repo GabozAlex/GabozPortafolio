@@ -1,0 +1,75 @@
+/*
+ * 1. Estilos para el Contenedor Principal de la Sección
+ * CLASE RECOMENDADA: .Educacion
+ */
+ .Educacion {
+    padding: 60px 40px; 
+    margin: 40px auto; 
+    max-width: 900px; /* Ancho un poco menor para centrar la atención */
+    background-color: #161b22; 
+    border-radius: 8px;
+}
+
+/*
+ * 2. Estilos para el Título de la Sección
+ * Etiqueta: <h2>Educación</h2>
+ */
+.Educacion h2 {
+    font-size: 2.2rem;
+    color: #66fcf1; 
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2e435a; 
+    text-align: center;
+}
+
+/*
+ * 3. Estilos para cada Entrada de Educación
+ * Etiqueta: <p>
+ */
+.Educacion p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 15px; /* Espacio entre cada elemento de la lista */
+    padding-left: 20px;
+    /* Estilo de lista de tiempo/bullet point personalizado */
+    position: relative; 
+}
+
+/* Pseudo-elemento para el punto visual (Timeline) */
+.Educacion p::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffc72c; /* Color de acento */
+    font-size: 1.2rem;
+}
+
+/*
+ * 4. Estilos para resaltar el Título/Grado
+ * Etiqueta: <span> (Lic. Informatica, Electricista)
+ */
+.Educacion p span {
+    font-weight: bold;
+    color: #f0f0f0; 
+    /* Separador visual después del span */
+    margin-right: 5px; 
+    padding-right: 5px;
+    border-right: 1px solid #444; 
+}
+
+/*
+ * 5. Adaptación para Móviles
+ */
+@media (max-width: 600px) {
+    .Educacion {
+        padding: 30px 15px;
+    }
+    .Educacion h2 {
+        font-size: 1.8rem;
+    }
+    .Educacion p {
+        font-size: 1rem;
+    }
+}

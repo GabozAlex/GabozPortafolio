@@ -1,0 +1,36 @@
+/*
+ * Archivo: Header.css
+ * Estilos para el componente header.tsx
+ */
+ header {
+    /* Fija el header en la parte superior */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    background-color: #1f2833; 
+    padding: 15px 40px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+nav {
+    /* Utiliza Flexbox para distribuir los enlaces */
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+    nav {
+        justify-content: space-around;
+        gap: 15px;
+    }
+}
