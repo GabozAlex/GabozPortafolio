@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import TarjetaProyecto from '../tarjetaproyectos/tarjetaproyectos'; // Asegúrate de que esta ruta sea correcta
-import './Proyectos.css'; 
+import './proyectos.css'; 
 
 // Define la interfaz (estructura de datos) para un proyecto
 interface Proyecto {
