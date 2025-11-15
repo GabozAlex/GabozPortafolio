@@ -23,7 +23,7 @@ export default function Proyectos() {
 
   useEffect(() => {
     // La llamada se hace al endpoint local creado en la carpeta 'api/'
-    fetch('/api/vercel-projects') 
+    fetch('/api/projects') 
       .then(response => {
         if (!response.ok) {
           // Si la respuesta no es 200 OK, lanza un error
