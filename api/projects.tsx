@@ -7,9 +7,20 @@ const VERCEL_TEAM_ID = process.env.Il21xjv9Zo47dgUhHK0Be50w || 'tu_id_de_equipo_
 const VERCEL_TOKEN = process.env.DIooSpS1VgQcLqjDbda7CYmC;
 
 // ID de los proyectos que no quieres mostrar (ej: el código del portafolio)
-const PROJECTS_TO_EXCLUDE = ['prj_xxxxxxxxxxxx']; 
+const PROJECTS_TO_EXCLUDE = ['']; 
 
-export default async (req, res) => {
+interface ApiResponse {
+    error?: string;
+    projects?: {
+        id: string;
+        name: string;
+        url: string;
+        updated: string;
+        framework: string;
+    }[];
+}
+
+export default async (_req: any, res: { status: (arg0: number) => { (): any; new(): any; json: (arg0: ApiResponse) => void; }; setHeader: (arg0: string, arg1: string) => void; }) => {
     if (!VERCEL_TOKEN) {
         return res.status(500).json({ error: "VERCEL_TOKEN no está configurado." });
     }
@@ -29,10 +40,26 @@ export default async (req, res) => {
         if (!response.ok) {
             // Muestra el error de la API si la respuesta no fue OK
             const errorData = await response.json();
-            throw new Error(`Error de Vercel API (${response.status}): ${errorData.error.message}`);
+            if (typeof errorData === 'object' && errorData !== null && 'error' in errorData && typeof (errorData as any).error.message === 'string') {
+                throw new Error(`Error de Vercel API (${response.status}): ${(errorData as any).error.message}`);
+            } else {
+                throw new Error(`Error de Vercel API (${response.status}): Respuesta desconocida.`);
+            }
         }
 
-        const data = await response.json();
+        interface VercelProject {
+            id: string;
+            name: string;
+            link: { domain: string | null };
+            updatedAt: string;
+            framework: string;
+        }
+
+        interface VercelResponse {
+            projects: VercelProject[];
+        }
+
+        const data = (await response.json()) as VercelResponse;
 
         // 2. Filtra y mapea solo los datos de los proyectos que tienen un dominio asignado
         const projects = data.projects
@@ -50,7 +77,7 @@ export default async (req, res) => {
             }));
 
         res.setHeader('Cache-Control', 's-maxage=3600, stale-while-revalidate');
-        res.status(200).json(projects);
+        res.status(200).json({ projects });
 
     } catch (error) {
         console.error("Error al consultar Vercel:", error);
