@@ -2,11 +2,11 @@
 
 // Usamos el nombre estándar para tu Token Personal de Vercel.
 // Debes configurarlo en las Variables de Entorno (Environment Variables) de Vercel.
-const VERCEL_TOKEN = process.env.VERCEL_TOKEN;
+const VERCEL_TOKEN = process.env.VfY5yI0Fz3Acoo1xGhZmT2xn;
 
 // ID de tu equipo o usuario (opcional, si usas una cuenta personal, puede ser 'undefined').
 // Si usas un equipo, busca el ID en el Dashboard de Vercel.
-const VERCEL_TEAM_ID = process.env.VERCEL_TEAM_ID; 
+const VERCEL_TEAM_ID = process.env.Il21xjv9Zo47dgUhHK0Be50w; 
 
 // URL de la API de Vercel para listar proyectos (se usa 'limit=1' para la verificación rápida)
 const getApiUrl = () => {
