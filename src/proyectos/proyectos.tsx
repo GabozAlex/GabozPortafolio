@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import TarjetaProyecto from '../tarjetaproyectos/tarjetaproyectos'; // Asegúrate de que esta ruta sea correcta
+
 import './proyectos.css'; 
 
 export default function Proyectos() {
