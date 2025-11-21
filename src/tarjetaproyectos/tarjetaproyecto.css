@@ -15,8 +15,8 @@
 /* 2. Estilo de la Tarjeta Individual */
 /* ==================================== */
 .tarjeta-proyecto {
-    background-color: #34495e;
-    border: 1px solid #e0e0e0;
+    background-color: #161b22;
+    border: 1px solid #000;
     border-radius: 10px;
     overflow: hidden; /* Asegura que la imagen no se salga del borde */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave para darle profundidad */
@@ -42,7 +42,7 @@
 
 .tarjeta-proyecto h3 {
     font-size: 1.5rem;
-    color: #000;
+    color: #ffffff;
     margin: 15px 15px 5px 15px;
 }
 
@@ -121,8 +121,9 @@
 /* ==================================== */
 .links {
     display: flex;
+    justify-content: center;
     padding: 15px;
-    border-top: 1px solid #f1f1f1;
+    border-top: 1px solid #2980b9;
     margin-top: auto; /* Empuja los enlaces a la parte inferior de la tarjeta */
 }
 

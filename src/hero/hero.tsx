@@ -8,7 +8,9 @@ export default function hero() {
             <h2>Desarrollador Web Front-End</h2>
             <h2>Desarrollador Desktop</h2>
             <h2>Tecnico en Computacion</h2>
-            <p>Capacidad de aprender rapido, persona proactiva, disponible para seguir ordenes, seguir patron y planear ideas funcionales.</p>
+            <p>
+            Soy un Desarrollador Front-End orientado a soluciones, especializado en la creación de experiencias web modernas, rápidas y fáciles de mantener. Mi enfoque está en utilizar las herramientas más eficientes de la industria para garantizar un producto final de alta calidad que cumpla los objetivos de negocio de mis clientes.
+            </p>
         </section>
         </>
     )
