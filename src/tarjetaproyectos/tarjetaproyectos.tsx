@@ -1,34 +1,59 @@
-// src/components/TarjetaProyecto.jsx
 
-// Asegúrate de importar cualquier CSS que crees para este componente (ej: TarjetaProyecto.css)
+import './tarjetaproyecto.css';
 
-interface Proyecto {
-  name: string;
-  description?: string;
-  language: string;
-  last_updated: string;
-  url: string;
+interface ProyectoData {
+  titulo: string;
+  descripcion: string;
+  tecnologias: string[];
+  link_demo: string;
+  link_github: string;
+  imagen_url: string;
 }
 
-export default function TarjetaProyecto({ proyecto }: { proyecto: Proyecto }) {
-    return (
-      <div className="tarjeta-proyecto">
-        <h3 className="titulo-proyecto">{proyecto.name}</h3>
-        <p className="descripcion">{proyecto.description || 'Este proyecto no tiene una descripción.'}</p>
+// El componente recibe un objeto de propiedades (props), en este caso, 'data'
+function TarjetaProyecto({ data }: { data: ProyectoData }) {
+  // Desestructuramos el objeto 'data' para usar las variables directamente
+  const { 
+    titulo, 
+    descripcion, 
+    tecnologias, 
+    link_demo, 
+    link_github, 
+    imagen_url 
+  } = data;
+
+  return (
+    <article className="tarjeta-proyecto">
+      <img src={imagen_url} alt={`Captura del proyecto ${titulo}`} className="proyecto-imagen"/>
+      
+      <h3>{titulo}</h3>
+      <details className="proyecto-detalles">
         
-        <div className="detalles">
-          <span className="lenguaje">{proyecto.language}</span>
-          <span className="fecha">Actualizado: {proyecto.last_updated}</span>
+        {/* El Summary es el texto/área clickable */}
+        <summary className="detalle-summary">
+          <span className="summary-text">Ver / Ocultar Descripción</span>
+        </summary>
+        
+        {/* Esto es lo que aparece al hacer clic en Summary */}
+        <div className="detalle-contenido">
+            <p>{descripcion}</p>
         </div>
         
-        <a 
-          href={proyecto.url} 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="btn-repo"
-        >
-          Ver en GitHub
-        </a>
+      </details>
+      
+      {/* Mapeamos el array de tecnologías para crear los 'spans' */}
+      <div className="tecnologias">
+        {tecnologias.map((tech, index) => (
+          <span key={index} className="tech-tag">{tech}</span>
+        ))}
       </div>
-    );
-  }
+      
+      <div className="links">
+        <a href={link_demo} target="_blank" rel="noopener noreferrer" className="btn-demo">Ver Demo</a>
+        <a href={link_github} target="_blank" rel="noopener noreferrer" className="btn-github">Ver Código</a>
+      </div>
+    </article>
+  );
+}
+
+export default TarjetaProyecto;

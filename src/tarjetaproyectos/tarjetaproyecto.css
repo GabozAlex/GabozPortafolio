@@ -1,0 +1,160 @@
+/* ==================================== */
+/* 1. Contenedor General (Portafolio.jsx) */
+/* ==================================== */
+.contenedor-proyectos {
+    display: grid;
+    /* Crea una cuadrícula de 3 columnas en pantallas grandes */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; /* Espacio entre las tarjetas */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* ==================================== */
+/* 2. Estilo de la Tarjeta Individual */
+/* ==================================== */
+.tarjeta-proyecto {
+    background-color: #34495e;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden; /* Asegura que la imagen no se salga del borde */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave para darle profundidad */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ==================================== */
+/* 3. Imagen y Texto */
+/* ==================================== */
+.proyecto-imagen {
+    width: 100%;
+    /* Altura fija para que todas las tarjetas se vean uniformes */
+    height: 220px; 
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+.tarjeta-proyecto h3 {
+    font-size: 1.5rem;
+    color: #000;
+    margin: 15px 15px 5px 15px;
+}
+
+/* ==================================== */
+/* Nuevo CSS para <details> y <summary> */
+/* ==================================== */
+
+/* Estilo para el contenedor de detalles */
+.proyecto-detalles {
+    border: none;
+    padding: 0 15px 15px 15px;
+    margin-top: -5px; /* Ajuste para acercarlo al título */
+}
+
+/* Estilo para el encabezado clickable */
+.detalle-summary {
+    cursor: pointer;
+    padding: 5px 0;
+    list-style: none; /* Elimina el triángulo nativo del navegador */
+    font-weight: 600;
+    color: #3498db; /* Color de enlace */
+    transition: color 0.2s;
+}
+
+/* Reinsertar el triángulo/indicador de forma manual */
+.detalle-summary::before {
+    content: '▶ '; /* Triángulo hacia la derecha */
+    margin-right: 5px;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+/* Rotar el triángulo cuando los detalles están abiertos */
+.proyecto-detalles[open] .detalle-summary::before {
+    transform: rotate(90deg); /* Triángulo hacia abajo */
+}
+
+/* Estilo para el contenido de la descripción */
+.detalle-contenido p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    padding: 10px 0 0 0; /* Ajusta el padding ya que la descripción está dentro del <details> */
+    margin: 0;
+}
+
+.tarjeta-proyecto p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    padding: 0 10px;
+    flex-grow: 1; /* Permite que el párrafo de descripción ocupe el espacio restante */
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* ==================================== */
+/* 4. Tags de Tecnologías */
+/* ==================================== */
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 15px 15px 15px;
+}
+
+.tech-tag {
+    background-color: #ecf0f1;
+    color: #34495e;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* ==================================== */
+/* 5. Enlaces (Botones) */
+/* ==================================== */
+.links {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #f1f1f1;
+    margin-top: auto; /* Empuja los enlaces a la parte inferior de la tarjeta */
+}
+
+.links a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-right: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+/* Botón de Demo (Primario) */
+.btn-demo {
+    background-color: #3498db; /* Azul vibrante */
+    color: white;
+}
+
+.btn-demo:hover {
+    background-color: #2980b9;
+}
+
+/* Botón de GitHub (Secundario/Esquema) */
+.btn-github {
+    background-color: transparent;
+    color: #3498db;
+    border: 2px solid #bdc3c7;
+}
+
+.btn-github:hover {
+    background-color: #bdc3c7;
+    color: #2c3e50;
+}

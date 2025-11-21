@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "titulo": "Suarez Sport",
+      "descripcion": "Suarez Sport Web es una landing page promocional y de catálogo para una marca de ropa deportiva que se especializa en la personalización y estampados exclusivos. El sitio está diseñado para informar a los clientes sobre la gama de productos disponibles (camisas, pantalones, conjuntos, suéteres) y resaltar las ventajas de elegir una marca enfocada en la calidad y el diseño a la medida.",
+      "tecnologias": ["HTML, CSS, JavaScript"],
+      "link_demo": "https://suarezsport.vercel.app/",
+      "link_github": "https://github.com/GabozAlex/suarezsport.github.io.git",
+      "imagen_url": "" 
+    },
+    {
+      "id": 2,
+      "titulo": "Suarez Sport Gym",
+      "descripcion": " SuarezSport Gym Web es la landing page oficial del gimnasio, diseñada para atraer, informar y convertir visitantes en miembros. El sitio comunica de forma clara la propuesta de valor del gimnasio, presenta sus instalaciones y servicios, y facilita la interacción directa para la captación de clientes.",
+      "tecnologias": ["HTML, CSS"],
+      "link_demo": "https://suarezsportgym.vercel.app/",
+      "link_github": "https://github.com/GabozAlex/SuarezSport-Gym.git",
+      "imagen_url": "https://suarezsportgym.vercel.app/"
+    },
+    {
+        "id": 3,
+        "titulo": "Semaforo Inteligente / Virtual",
+        "descripcion": "Este proyecto es una implementación completa de un Sistema de Semáforo Digital Controlado Remotamente, desarrollado como prueba de concepto para un sistema de gestión de tráfico en entornos de Internet de las Cosas (IoT).",
+        "tecnologias": ["HTML, CSS, JavaScript"],
+        "link_demo": "https://semaforo-inteligente-two.vercel.app/",
+        "link_github": "https://github.com/GabozAlex/Semaforo-Inteligentes.git",
+        "imagen_url": "https://semaforo-inteligente-udone.vercel.app/"
+    },
+    {
+        "id": 4,
+        "titulo": "Juicy Burguer & Meals",
+        "descripcion": "Juicy Burguers & Meals es un robusto Sistema de Punto de Venta (POS) desarrollado como un proyecto universitario para simular y gestionar la operación diaria de un negocio de comida y bebidas.",
+        "tecnologias": ["HTML, CSS, JavaScript"],
+        "link_demo": "https://juicyburguersmeals.vercel.app/",
+        "link_github": "https://github.com/GabozAlex/JUICY-BURGERS-MEALS.git",
+        "imagen_url": "https://juicyburguersmeals.vercel.app/"
+    },
+    {
+        "id": 5,
+        "titulo": "Crustaceos Expertos",
+        "descripcion": "El Sistema de Reconocimiento de Petrolisthes es una aplicación especializada desarrollada por estudiantes de la Universidad de Oriente (UDO-NE) en el marco de la asignatura de Sistemas Expertos. El objetivo principal es la identificación automatizada y precisa de ocho (8) especies distintas del género de crustáceos Petrolisthes, un grupo clave en los ecosistemas marinos.",
+        "tecnologias": ["HTML, CSS"],
+        "link_demo": "https://crustaceos-expertos.vercel.app/",
+        "link_github": "https://github.com/GabozAlex/CrustaceosExpertos.git",
+        "imagen_url": "https://crustaceos-expertos.vercel.app/"
+    },
+    {
+        "id": 6,
+        "titulo": "Calculadora Paypal",
+        "descripcion": "Esta es una calculadora web interactiva diseñada específicamente para el mercado venezolano. Su objetivo principal es ayudar a los usuarios a estimar con precisión las cantidades de saldo PayPal (USD) que deben enviar o recibir después de aplicar las comisiones estándar de PayPal (5.4% + $0.30).",
+        "tecnologias": ["HTML, CSS, JavaScript"],
+        "link_demo": "https://calculadora-paypal-eight.vercel.app/",
+        "link_github": "https://github.com/GabozAlex/Calculadora-Paypal.git",
+        "imagen_url": "https://calculadora-paypal-eight.vercel.app/"
+    },
+    {
+        "id": 7,
+        "titulo": "Desarrollo Organizacional UDO",
+        "descripcion": "Esta página web es un centro de recursos educativos integral dedicado a la disciplina del Desarrollo Organizacional (DO). Fue concebida como un manual digital o una base de conocimiento para explorar las teorías, prácticas y aplicaciones del DO en el ámbito empresarial y de la gestión del cambio.",
+        "tecnologias": ["HTML, CSS, JavaScript, SCSS"],
+        "link_demo": "https://desarrollo-organizacional-lac.vercel.app/",
+        "link_github": "https://github.com/GabozAlex/DesarrolloOrganizacional.git",
+        "imagen_url": "https://desarrollo-organizacional-lac.vercel.app/"
+    }
+
+  ]
