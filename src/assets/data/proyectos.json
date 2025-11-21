@@ -6,7 +6,7 @@
       "tecnologias": ["HTML, CSS, JavaScript"],
       "link_demo": "https://suarezsport.vercel.app/",
       "link_github": "https://github.com/GabozAlex/suarezsport.github.io.git",
-      "imagen_url": "" 
+      "imagen_url": "https://github.com/GabozAlex/GabozPortafolio/blob/main/src/assets/img/suarezsport.png?raw=true" 
     },
     {
       "id": 2,
@@ -15,7 +15,7 @@
       "tecnologias": ["HTML, CSS"],
       "link_demo": "https://suarezsportgym.vercel.app/",
       "link_github": "https://github.com/GabozAlex/SuarezSport-Gym.git",
-      "imagen_url": "https://suarezsportgym.vercel.app/"
+      "imagen_url": "https://github.com/GabozAlex/GabozPortafolio/blob/main/src/assets/img/suarezsportgym.png?raw=true"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "tecnologias": ["HTML, CSS, JavaScript"],
         "link_demo": "https://semaforo-inteligente-two.vercel.app/",
         "link_github": "https://github.com/GabozAlex/Semaforo-Inteligentes.git",
-        "imagen_url": "https://semaforo-inteligente-udone.vercel.app/"
+        "imagen_url": "https://github.com/GabozAlex/GabozPortafolio/blob/main/src/assets/img/semaforovirtual.png?raw=true"
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "tecnologias": ["HTML, CSS, JavaScript"],
         "link_demo": "https://juicyburguersmeals.vercel.app/",
         "link_github": "https://github.com/GabozAlex/JUICY-BURGERS-MEALS.git",
-        "imagen_url": "https://juicyburguersmeals.vercel.app/"
+        "imagen_url": "https://github.com/GabozAlex/GabozPortafolio/blob/main/src/assets/img/juicymeals.png?raw=true"
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "tecnologias": ["HTML, CSS"],
         "link_demo": "https://crustaceos-expertos.vercel.app/",
         "link_github": "https://github.com/GabozAlex/CrustaceosExpertos.git",
-        "imagen_url": "https://crustaceos-expertos.vercel.app/"
+        "imagen_url": "https://github.com/GabozAlex/GabozPortafolio/blob/main/src/assets/img/crustaceos.png?raw=true"
     },
     {
         "id": 6,
@@ -51,7 +51,7 @@
         "tecnologias": ["HTML, CSS, JavaScript"],
         "link_demo": "https://calculadora-paypal-eight.vercel.app/",
         "link_github": "https://github.com/GabozAlex/Calculadora-Paypal.git",
-        "imagen_url": "https://calculadora-paypal-eight.vercel.app/"
+        "imagen_url": "https://github.com/GabozAlex/GabozPortafolio/blob/main/src/assets/img/calculadorapaypal.png?raw=true"
     },
     {
         "id": 7,
@@ -60,7 +60,7 @@
         "tecnologias": ["HTML, CSS, JavaScript, SCSS"],
         "link_demo": "https://desarrollo-organizacional-lac.vercel.app/",
         "link_github": "https://github.com/GabozAlex/DesarrolloOrganizacional.git",
-        "imagen_url": "https://desarrollo-organizacional-lac.vercel.app/"
+        "imagen_url": "https://github.com/GabozAlex/GabozPortafolio/blob/main/src/assets/img/desarrolloorganizacional.png?raw=true"
     }
 
   ]
